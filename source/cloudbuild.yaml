@@ -22,7 +22,7 @@ steps:
     - deploy
     - "${_FUNCTION_NAME}"
     - --region=europe-west1
-    - --source=${_SOURCE_DIR}
+    - --source=.
     - --trigger-bucket=${_BUCKET_NAME}
     - --runtime=python310
     - --entry-point=${_ENTRY_POINT}
@@ -33,7 +33,6 @@ options:
 
 substitutions:
   _PROJECT_ID: "macro-deck-357611"
-  _SOURCE_DIR: "/source"
   _FUNCTION_NAME: "cla-terraform-function-test_m1"
   _BUCKET_NAME: "macro-deck-357611-clabucket-in-test_m1_test1"
   _ENTRY_POINT: "hello_gcs"
