@@ -8,8 +8,8 @@ from google.cloud import storage
 import json, os
 #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\gcp_poc\key\cla-poc-key.json"
 
-
-in_bucket = "macro-deck-357611-clabucket-in-test_m1_test1"
+in_bucket = os.environ.get("INBOUNDBUCKETNAME", "none")
+# in_bucket = "macro-deck-357611-clabucket-in-test_m1_test1"
 
 def hello_gcs(event, context):
     print(event)
