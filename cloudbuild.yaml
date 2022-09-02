@@ -23,10 +23,10 @@ steps:
     - "${_FUNCTION_NAME}"
     - --region=europe-west1
     - --source=${_SOURCE_DIR}
-    - --trigger-bucket="${_BUCKET_NAME}"
+    - --trigger-bucket=${_BUCKET_NAME}
     - --runtime=python310
-    - --entrypoint="${_ENTRY_POINT}"
-    - --set-env-vars inbound_bucket_name="${_BUCKET_NAME}"
+    - --entrypoint=${_ENTRY_POINT}
+    - --set-env-vars inbound_bucket_name=${_BUCKET_NAME}
 options:
   logging: CLOUD_LOGGING_ONLY
   dynamic_substitutions: true
