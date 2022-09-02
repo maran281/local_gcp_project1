@@ -30,7 +30,7 @@ steps:
 options:
   logging: CLOUD_LOGGING_ONLY
   dynamic_substitutions: true
-
+ 
 substitutions:
   _PROJECT_ID: "macro-deck-357611"
   _FUNCTION_NAME: "cla-terraform-function-test_m1"
