@@ -9,7 +9,7 @@ import json, os
 #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\gcp_poc\key\cla-poc-key.json"
 
 
-in_bucket = os.environ.get("inbound_bucket_name", "none")
+in_bucket = "macro-deck-357611-clabucket-in-test_m1_test1"
 
 def hello_gcs(event, context):
     print(event)
