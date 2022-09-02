@@ -26,7 +26,7 @@ steps:
     - --trigger-bucket=${_BUCKET_NAME}
     - --runtime=python310
     - --entry-point=${_ENTRY_POINT}
-    - --set-env-vars INBOUNDBUCKETNAME=${_BUCKET_NAME}
+    - '--set-env-vars' INBOUNDBUCKETNAME=${_BUCKET_NAME}
     
 options:
   logging: CLOUD_LOGGING_ONLY
